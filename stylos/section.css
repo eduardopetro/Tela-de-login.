@@ -1,0 +1,272 @@
+.container-section {
+    border: 1px solid black;
+    background: var(--branco);
+    border-radius: 1.5em;
+    width: 19.375em;
+    margin-top: 0.5em;
+    margin-left: 2.2em;
+    overflow-y: hidden;
+
+}
+
+img {
+    border-radius: 0.625em 0.625em 0em 0em;
+    width: 310px;
+    height: 13.375em;
+
+
+}
+
+
+.titulo {
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.paragrafo {
+    font-size:0.9em;
+    width: 18.75em;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    height: 2em;
+    border-radius: 0.313em;
+    margin: 0.4em;
+    background-color: var(--violeta-m-claro);
+    border-radius: 0.625em;
+    border: 3px solid var(--violeta-m-claro);
+
+}
+
+
+input:focus-within {
+    background: #eee7e7;
+}
+
+
+
+.icones {
+    width: 1.875em;
+    position: relative;
+    color: var(--branco);
+    background-color: var(--violeta-m-claro);
+    padding: 0.1em;
+}
+
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    width: 17.5em;
+    margin-left: 0.9em;
+    gap: 0.625em;
+}
+
+.button-entrar {
+    background: var(--ciano-m-escuro);
+    color: var(--branco);
+    font-size: 1.4em;
+    border-radius: 0.625em;
+    padding: 0.225em 0.625em 0.225em 0.625em;
+    margin-top: 1em;
+    border: none;
+}
+
+
+.button-senha {
+    border-radius: 0.313em;
+    font-size: 1.25em;
+    color: var(--ciano-m-escuro);
+    border: 1px solid var(--ciano-m-escuro);
+    background: var(--branco);
+    border-radius: 0.625em;
+    padding: 0.225em 0.625em 0.225em 0.225em;
+    margin-bottom: 1em;
+}
+
+.email {
+    color: var(--ciano-m-escuro);
+
+}
+
+.tablet__imput-email {
+    display: none;
+}
+
+.tablet__imput-senha {
+    display: none;
+}
+
+.desktop__imput-email {
+    display: none;
+}
+
+.desktop__imput-senha {
+    display: none;
+}
+
+
+@media screen and (min-width:416px) {
+
+    .container-degrade {
+        background-image: linear-gradient(to top, var(--ciano-m-escuro), var(--violeta-m-claro));
+        overflow: hidden;
+        margin-top: 3em;
+
+    }
+
+    .container-section {
+        width: 51.25em;
+        margin: auto;
+    
+    }
+
+    .img {
+        float: left;
+        width: 16.063em;
+        height: 16.813em;
+        border-radius: 1.188em 0em 0em 1.188em;
+    }
+
+    .titulo {
+        font-size: 1.25em;
+        font-weight: bolder;
+    }
+
+    .paragrafo {
+        float: left;
+        width: 33.125em;
+        font-size: 0.813em;
+        padding-left: 2em;
+        line-height: 1.6em;
+    }
+
+    .input {
+        float: left;
+        background: var(--violeta-m-claro);
+        width: 30.625em;
+        margin: 0.2em;
+        height: 1.875em;
+        margin-left: 1.3em;
+    }
+
+    .icones {
+        padding: 2px;
+    }
+
+    .container-button {
+        margin: auto;
+    }
+
+    .button-entrar {
+        font-size: 1em;
+        margin: 0.2em -6.2em 0em -7.6em;
+        border-radius: 7px;
+    }
+
+    .button-senha {
+        font-size: 14px;
+        margin: 0em -7.1em 0.5em -8.8em;
+        padding: 0px 0px .5em 0px;
+        border-radius: 7px;
+    }
+
+    .mobile__imput-email {
+        display: none;
+    }
+
+    .mobile__imput-senha {
+        display: none;
+    }
+
+    .tablet__imput-email {
+        display: block;
+    }
+
+    .tablet__imput-senha {
+        display: block;
+    }
+
+}
+
+
+@media screen and (min-width:1000px) {
+
+    .container-degrade {
+        background-image: linear-gradient(to top, var(--ciano-m-escuro), var(--violeta-m-claro));
+        overflow: hidden;
+
+    }
+
+    .container-section {
+        background-color: var(--branco);
+        width: 62.5em;
+        margin-top: 5em;
+    }
+
+    .img {
+        float: right;
+        width: 29em;
+        height: 19.063em;
+        border-radius: 0em 1.25em 1.125em 0em;
+    }
+
+    .titulo{
+        font-size: 1.875em;
+        text-align: center;
+        padding-top: 0.5em;
+    }
+
+    .paragrafo {
+        font-size: 0.875em;
+        width: 33.125em;
+        padding: 0.5em;
+
+        font-weight: bold;
+    }
+
+    .input {
+
+        background: var(--violeta-m-claro);
+        width: 32.188em;
+        margin: 0.2em;
+        height: 1.875em;
+        margin-left: 0.5em;
+
+    }
+
+    .button-entrar {
+        font-size: 1em;
+        margin: 0.2em -7.4em 0em -7.5em;
+        border-radius: 7px;
+    }
+
+    .button-senha {
+        font-size: 14px;
+        margin: 0em -8.3em 1.5em -8.6em;
+        padding: 0px 0px 0.5em 0px;
+        border-radius: 7px;
+    }
+
+    .tablet__imput-email {
+        display: none;
+    }
+
+    .tablet__imput-senha {
+        display: none;
+    }
+
+    .desktop__imput-email {
+        display: block;
+    }
+
+    .desktop__imput-senha {
+        display: block;
+    }
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylo.css">
+    <link rel="shortcut icon" href="./assets/password.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <title>Tela de login</title>
+</head>
+
+<body class="container-degrade">
+
+    <main>
+        <section class="container-section">
+
+            <img class="img" src="./assets/predio.jpg" alt="Foto de um predio">
+
+            <h1 class="titulo">Login</h1>
+
+            <p class="paragrafo">
+
+                Seja bem-vindo(a)novamente.Faça login para acessar
+                sua conta e poder fazer as configurações no seu ambiente.
+            </p>
+
+            <form action="" method="get" autocapitalize="on">
+
+                <div class="input">
+
+
+                    <label for="iemail"></label>
+
+                    <span class="material-symbols-outlined icones ">
+                        person
+                    </span>
+
+                    <!--Input da versão mobile--><input class="mobile__imput-email" type="email" name="email"
+                        id="iemail" size="29" placeholder="Digite aqui seu e-mail" required>
+
+                    <!--Input da versão tablet--> <input class="tablet__imput-email" type="email" name="email"
+                        id="iemail" size="53" placeholder="Digite aqui seu e-mail" required>
+
+                    <!--Input da versão desktop--> <input class="desktop__imput-senha" type="password" name="password"
+                        size="61" id="ipassword" placeholder="Digite aqui sua senha" required>
+
+                </div>
+
+                <div class="input color-input">
+                    <label for="ipassword"></label>
+
+                    <span class="material-symbols-outlined  icones">
+                        vpn_key </span>
+
+
+                    <!--Input da versão mobile--> <input class="mobile__imput-senha" type="password" name="password"
+                        size="29" id="ipassword" placeholder="Digite aqui sua senha" required>
+
+                    <!--Input da versão tablet--> <input class="tablet__imput-senha" type="password" name="password"
+                        size="53" id="ipassword" placeholder="Digite aqui sua senha" required>
+
+                    <!--Input da versão desktop--> <input class="desktop__imput-senha" type="password" name="password"
+                        size="61" id="ipassword" placeholder="Digite aqui sua senha" required>
+
+
+                </div>
+
+                <div class=" container-button">
+                    <button class="button-entrar" value="Entrar">Entrar
+                    </button>
+                    <button class="button-senha" value="Esqueci a senha">Esqueci a senha<span
+                            class="material-symbols-outlined email">
+                            mail
+                        </span> </button>
+
+                </div>
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
